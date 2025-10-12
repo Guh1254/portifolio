@@ -751,3 +751,69 @@ section:nth-of-type(odd) {
     background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
     border-radius: 4px;
 }
+
+/* Certifications Section */
+.certifications {
+    background: var(--background-dark); /* Garante o fundo correto */
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.cert-card {
+    background: var(--background-light);
+    border: 1px solid #334155;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border-color: var(--primary-color);
+}
+
+.cert-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    background: rgba(34, 211, 238, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    flex-grow: 1; /* Faz o título ocupar o espaço para alinhar os botões */
+}
+
+.cert-issuer {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.cert-card .btn-demo {
+    margin-top: auto; /* Alinha o botão na parte inferior do card */
+}
+a.project-card {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz o texto herdar a
+     cor normal */
+     /* Adiciona espaçamento extra abaixo da seção de tecnologias */
+}

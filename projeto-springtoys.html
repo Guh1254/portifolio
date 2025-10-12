@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Spring Toys - Gustavo Costa Oliveira</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projeto.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">GCO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Início</a>
+                <a href="index.html#about" class="nav-link">Sobre</a>
+                <a href="index.html#projects" class="nav-link">Projetos</a>
+                <a href="index.html#skills" class="nav-link">Habilidades</a>
+                <a href="index.html#certifications" class="nav-link">Certificações</a>
+                <a href="index.html#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <h1>Spring Toys</h1>
+                <p>Projeto do 3º Semestre</p>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container project-layout">
+                <div class="project-info">
+                    <h2>Descrição do Projeto</h2>
+                    <p>
+                        O Spring Toys é um projeto full-stack que simula um e-commerce completo para uma loja de brinquedos. Desenvolvido em equipe, o sistema conta com um back-end robusto criado em <strong>Java com Spring Boot</strong>, que expõe uma API REST para gerenciar produtos, categorias e usuários. O front-end, construído com <strong>HTML, CSS e JavaScript puro</strong>, consome essa API para criar uma experiência dinâmica tanto para o cliente quanto para o administrador.
+                    </p>
+
+                    <h2>Tecnologias Utilizadas</h2>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+
+                    <h2>Minha Participação no Projeto</h2>
+                    <p>
+                        Neste projeto, minha principal atuação foi no <strong>desenvolvimento front-end</strong> e na <strong>integração com a API</strong>. Fui responsável por traduzir as necessidades do sistema em interfaces funcionais e interativas. Minhas tarefas incluíram:
+                    </p>
+                    <ul>
+                        <li><strong>Consumo da API REST:</strong> Utilizei JavaScript e a função `fetch` para realizar chamadas (GET, POST, PUT, DELETE) aos endpoints do back-end, buscando e enviando dados de produtos e categorias.</li>
+                        <li><strong>Renderização Dinâmica:</strong> Criei as funções para popular dinamicamente o catálogo de produtos, os detalhes de cada brinquedo e as listas no painel administrativo com os dados vindos da API.</li>
+                        <li><strong>Interface Administrativa:</strong> Desenvolvi as telas do painel de administração, incluindo os formulários para criar, editar e excluir brinquedos e categorias, garantindo que todas as interações fossem refletidas no banco de dados através da API.</li>
+                    </ul>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="project-links">
+                        <h3>Links do Projeto</h3>
+                        <a href="https://github.com/Guh1254/Spring-Toys" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i> Ver Código no GitHub
+                        </a>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <h3>Screenshots</h3>
+                        <a href="img/springtoys-1.jpg">
+                            <img src="img/springtoys-1.jpg" alt="Screenshot da home do e-commerce Spring Toys">
+                        </a>
+                        <a href="img/springtoys-2.jpg">
+                            <img src="img/springtoys-2.jpg" alt="Screenshot do painel de administração do Spring Toys">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
+            <p>RA: 2571392312006 | Fatec Itaquera - Desenvolvimento de Software Multiplataforma</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        // Inicializa a galeria de imagens
+        var lightbox = new SimpleLightbox('.project-screenshots a');
+    </script>
+
+</body>
+</html>

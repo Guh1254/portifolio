@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConnectONGs - Gustavo Costa Oliveira</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projeto.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">GCO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Início</a>
+                <a href="index.html#about" class="nav-link">Sobre</a>
+                <a href="index.html#projects" class="nav-link">Projetos</a>
+                <a href="index.html#skills" class="nav-link">Habilidades</a>
+                <a href="index.html#certifications" class="nav-link">Certificações</a>
+                <a href="index.html#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <h1>ConnectONGs</h1>
+                <p>Projeto do 2º Semestre</p>
+            </div>
+        </section>
+
+            <section class="project-details">
+                <div class="container project-layout">
+                    <div class="project-info">
+                        <h2>Descrição do Projeto</h2>
+                        <p>
+                            A plataforma ConnectONGs foi desenvolvida para resolver um desafio crucial: a dificuldade que ONGs enfrentam para encontrar voluntários e gerenciar recursos, e a dificuldade que voluntários têm para encontrar ONGs alinhadas aos seus interesses. O sistema atua como uma ponte, criando um ecossistema centralizado onde ONGs podem divulgar vagas, listar recursos, e voluntários podem se candidatar de forma eficiente.
+                        </p>
+
+                        <h2>Tecnologias Utilizadas</h2>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+
+                        <h2>Minha Participação no Projeto</h2>
+                        <p>
+                            Neste projeto, atuei na <strong>Equipe de Banco de Dados</strong>. Minha principal responsabilidade foi a modelagem e estruturação de toda a base de dados que sustentava o sistema. Minhas tarefas incluíram:
+                        </p>
+                        <ul>
+                            <li><strong>Modelagem de Dados:</strong> Utilizando a ferramenta BrModelo, desenhei o Diagrama Entidade-Relacionamento (DER) para definir as tabelas, seus atributos e os relacionamentos entre elas (ONGs, Voluntários, Vagas, Recursos, etc.).</li>
+                            <li><strong>Implementação em MySQL:</strong> Fui responsável por traduzir o modelo lógico para o modelo físico, escrevendo o código SQL para criar as tabelas, definir chaves primárias e estrangeiras e garantir a integridade dos dados no MySQL.</li>
+                            <li><strong>Colaboração com o Back-End:</strong> Trabalhei em conjunto com a equipe de back-end (PHP) para garantir que as consultas ao banco de dados fossem eficientes e que a estrutura criada atendesse a todas as necessidades da aplicação.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-sidebar">
+                        <div class="project-links">
+                            <h3>Links do Projeto</h3>
+                            <a href="https://github.com/https-github-com-fatec-itaquera2sem/conectaongs" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i> Ver Código no GitHub
+                            </a>
+                            <a href="https://https-github-com-fatec-itaquera2sem.github.io/conectaongs/" target="_blank" class="btn btn-demo">
+                                <i class="fas fa-desktop"></i> Ver Demonstração
+                            </a>
+                        </div>
+
+                        <div class="project-screenshots">
+                            <h3>Screenshots</h3>
+                            <div class="gallery-container">
+                                <a href="img/connectongs-1.png">
+                                    <img src="img/connectongs-1.png" alt="Screenshot 1 do projeto ConnectONGs">
+                                </a>
+                                <a href="img/connectongs-2.png">
+                                    <img src="img/connectongs-2.png" alt="Diagrama de Caso de Uso do projeto">
+                                </a>
+                            </div>
+                        </div>
+                    </div> </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
+            <p>RA: 2571392312006 | Fatec Itaquera - Desenvolvimento de Software Multiplataforma</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        // Inicializa a galeria de imagens
+        var lightbox = new SimpleLightbox('.project-screenshots a');
+    </script>
+
+</body>
+</html>

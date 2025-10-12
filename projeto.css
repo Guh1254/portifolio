@@ -1,0 +1,134 @@
+/* Estilos para a Página de Projeto */
+
+/* Hero Section do Projeto */
+.project-hero {
+    background: var(--background-light);
+    padding: 120px 0 60px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* Detalhes do Projeto */
+.project-details {
+    padding: 80px 0;
+}
+
+.project-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+.project-info h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.project-info p, .project-info ul {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.project-info ul {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.project-info ul li {
+    margin-bottom: 10px;
+}
+
+.project-sidebar > div {
+    background: var(--background-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    border: 1px solid #334155;
+}
+
+.project-sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.project-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para as imagens das screenshots na sidebar */
+.project-screenshots img {
+    max-width: 100%; /* Garante que a imagem não transborde */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #334155;
+    display: block; /* Garante que a imagem se comporte como um bloco para margin-bottom */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .project-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Adiciona um cursor de zoom nas imagens da galeria */
+.project-screenshots a img:hover {
+    cursor: zoom-in;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.project-info .project-tech {
+    margin-bottom: 40px;
+}
+
+/* Estilos para o vídeo embutido */
+.project-video {
+    background: var(--background-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    border: 1px solid #334155;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px; /* Bordas arredondadas para o vídeo */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

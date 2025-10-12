@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pokédex Simples - Gustavo Costa Oliveira</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projeto.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">GCO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Início</a>
+                <a href="index.html#about" class="nav-link">Sobre</a>
+                <a href="index.html#projects" class="nav-link">Projetos</a>
+                <a href="index.html#skills" class="nav-link">Habilidades</a>
+                <a href="index.html#certifications" class="nav-link">Certificações</a>
+                <a href="index.html#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <h1>Pokédex Simples</h1>
+                <p>Projeto do 1º Semestre</p>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container project-layout">
+                <div class="project-info">
+                    <h2>Descrição do Projeto</h2>
+                    <p>
+                        Este foi um projeto individual desenvolvido para aplicar conceitos fundamentais de desenvolvimento front-end. O objetivo era criar uma interface interativa que consumisse dados de uma API pública, a <strong>PokéAPI</strong>. A aplicação busca os dados dos Pokémon e os exibe em cards, permitindo que o usuário pesquise por um Pokémon específico em tempo real.
+                    </p>
+
+                    <h2>Tecnologias Utilizadas</h2>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API REST</span>
+                    </div>
+
+                    <h2>Minha Participação no Projeto</h2>
+                    <p>
+                        Como este foi um projeto individual, fui responsável por todas as etapas do desenvolvimento, desde a concepção da interface até a implementação final. Minhas principais tarefas incluíram:
+                    </p>
+                    <ul>
+                        <li><strong>Estruturação (HTML):</strong> Criei a estrutura semântica da página, definindo os elementos para a barra de busca, a área de exibição dos cards e o cabeçalho.</li>
+                        <li><strong>Estilização (CSS):</strong> Desenvolvi todo o layout e a aparência dos cards dos Pokémon, garantindo um design limpo e responsivo.</li>
+                        <li><strong>Interatividade (JavaScript):</strong> Implementei a lógica para fazer as requisições à PokéAPI usando `fetch`, manipular os dados recebidos (JSON) e renderizar dinamicamente os cards na tela, além de criar a funcionalidade de filtro da barra de busca.</li>
+                    </ul>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="project-links">
+                        <h3>Links do Projeto</h3>
+                        <a href="https://github.com/Guh1254/pokedex" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i> Ver Código no GitHub
+                        </a>
+                        <a href="https://guh1254.github.io/pokedex/" target="_blank" class="btn btn-demo">
+                            <i class="fas fa-desktop"></i> Ver Demonstração
+                        </a>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <h3>Screenshots</h3>
+                        <div class="gallery-container"> 
+                            <a href="img/pokedex-1.png">
+                                <img src="img/pokedex-1.png" alt="Screenshot da tela principal da Pokédex">
+                            </a>
+                            <a href="img/pokedex-2.png">
+                                <img src="img/pokedex-2.png" alt="Screenshot da Pokédex com a busca funcionando">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
+            <p>RA: 2571392312006 | Fatec Itaquera - Desenvolvimento de Software Multiplataforma</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        // Inicializa a galeria de imagens
+        var lightbox = new SimpleLightbox('.project-screenshots a');
+    </script>
+    
+</body>
+</html>
