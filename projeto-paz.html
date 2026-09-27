@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Paz 2.0 (KMP) - Gustavo Costa Oliveira</title>
+    <title>Projeto PAZ (IoT, Cloud &amp; Telemetria) - Gustavo Costa Oliveira</title>
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -17,11 +17,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html#home">GCO</a>
+                <a href="index.html#home">GCO<span>.</span></a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html#home" class="nav-link">Início</a>
                 <a href="index.html#projects" class="nav-link">Projetos</a>
+                <a href="index.html#skills" class="nav-link">Habilidades</a>
+                <a href="index.html#experience" class="nav-link">Experiência</a>
                 <a href="index.html#contact" class="nav-link">Contato</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -35,17 +37,21 @@
     <main>
         <section class="project-hero">
             <div class="container">
-                <h1>Projeto Paz 2.0 (KMP)</h1>
-                <p>Evolução da Arquitetura: Sistema Multiplataforma com IoT</p>
+                <span class="project-tag-highlight"><i class="fas fa-award"></i> Publicação Científica no 8º EnGeTec</span>
+                <h1>Projeto PAZ</h1>
+                <p>IoT, Cloud &amp; Telemetria de Dados Operacionais e Ambientais</p>
             </div>
         </section>
 
         <section class="project-details">
             <div class="container project-layout">
                 <div class="project-info">
-                    <h2>Evolução do Projeto</h2>
+                    <h2>Visão Geral da Plataforma</h2>
                     <p>
-                        No <strong>6º semestre</strong>, o Projeto Paz passou por uma reformulação total. Abandonamos a arquitetura monolítica mobile anterior (React Native) para adotar <strong>Kotlin Multiplatform (KMP)</strong>. O objetivo foi validar a capacidade de compartilhar código de negócio entre plataformas nativas (Android, iOS, Web e Desktop) mantendo a performance nativa.
+                        O <strong>Projeto PAZ</strong> é uma plataforma robusta desenvolvida para validação de arquiteturas modernas em escala real, com foco em ingestão de dados de telemetria contínua, processamento em nuvem e distribuição de informações. O projeto alcançou reconhecimento acadêmico com <strong>Publicação Científica no 8º EnGeTec</strong> (Encontro de Gestão e Tecnologia).
+                    </p>
+                    <p>
+                        A arquitetura integra microcontroladores IoT (ESP32) conectados via Wi-Fi/MQTT para monitoramento e coleta contínua de telemetria, alimentando um backend em Spring Boot 3 na nuvem com persistência de dados estruturados em MySQL e armazenamento de objetos no <strong>AWS S3</strong>.
                     </p>
 
                     <h2>Stack Tecnológico Avançado</h2>
@@ -53,21 +59,21 @@
                         <span class="tech-tag">Kotlin Multiplatform (KMP)</span>
                         <span class="tech-tag">Compose Multiplatform</span>
                         <span class="tech-tag">Spring Boot 3</span>
-                        <span class="tech-tag">Spring Security (JWT)</span>
                         <span class="tech-tag">MySQL</span>
                         <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">IoT (ESP32/MQTT)</span>
+                        <span class="tech-tag">ESP32 (IoT / MQTT)</span>
+                        <span class="tech-tag">Docker</span>
                     </div>
 
-                    <h2>Minha Participação e Arquitetura</h2>
+                    <h2>Arquitetura &amp; Pipeline de Dados</h2>
                     <p>
-                        Como Desenvolvedor Full-Stack e Arquiteto de Software, minhas principais responsabilidades nesta nova versão foram:
+                        Como desenvolvedor e arquiteto de dados/software do ecossistema, minhas responsabilidades envolveram:
                     </p>
                     <ul>
-                        <li><strong>Arquitetura KMP:</strong> Implementação do compartilhamento de código (Networking, ViewModels, Modelos) entre 4 plataformas, reduzindo duplicidade em 40%.</li>
-                        <li><strong>Back-End Robusto:</strong> Migração do antigo back-end para <strong>Spring Boot</strong>, com segurança JWT, Swagger e integração com <strong>AWS S3</strong> para imagens.</li>
-                        <li><strong>Interface Unificada:</strong> Uso de Compose Multiplatform para criar interfaces responsivas que se adaptam a telas mobile e desktop com a mesma base de código.</li>
-                        <li><strong>Integração IoT:</strong> Configuração de sensores ESP32 comunicando via MQTT para monitoramento ambiental em tempo real.</li>
+                        <li><strong>Ingestão e Pipeline de Telemetria:</strong> Configuração e comunicação de sensores via hardware ESP32, garantindo envio resiliente de dados operacionais e de telemetria via MQTT/HTTP.</li>
+                        <li><strong>Arquitetura Multiplataforma:</strong> Compartilhamento de regras de negócio, serialização e chamadas de rede entre Android, iOS, Desktop e Web via Kotlin Multiplatform.</li>
+                        <li><strong>Backend &amp; Persistência em Nuvem:</strong> Desenvolvimento de API REST com Spring Boot 3, autenticação segura com JWT e integração de armazenamento de mídia com buckets AWS S3.</li>
+                        <li><strong>Containers &amp; Deploy:</strong> Empacotamento de serviços com Docker para garantia de portabilidade e facilidade de sustentação.</li>
                     </ul>
                 </div>
 
@@ -75,21 +81,20 @@
                     <div class="project-links">
                         <h3>Links do Projeto</h3>
                         <a href="https://github.com/SpringDevsFatec/ProjetoPaz_KotlinMultiplatforma" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-github"></i> Ver Código (KMP)
+                            <i class="fab fa-github"></i> Ver Código no GitHub
                         </a>
                         <a href="https://youtu.be/IfXGEZ7bx8Q" target="_blank" class="btn btn-demo">
-                            <i class="fab fa-youtube"></i> Ver Demo (Vídeo 1)
+                            <i class="fab fa-youtube"></i> Ver Demonstração 1
                         </a>
                         <a href="https://youtu.be/GzK8aCh7HCg" target="_blank" class="btn btn-demo">
-                            <i class="fab fa-youtube"></i> Ver Demo (Vídeo 2)
+                            <i class="fab fa-youtube"></i> Ver Demonstração 2
                         </a>
                     </div>
                     
-                    <div class="project-links" style="margin-top: 20px;">
-                        <h3>Versão Anterior</h3>
-                        <p style="font-size: 0.9rem; color: #9ca3af; margin-bottom: 10px;">Confira como o projeto começou no 5º semestre:</p>
-                        <a href="projeto-paz-v1.html" class="btn btn-secondary" style="width: 100%; text-align: center;">
-                            <i class="fas fa-history"></i> Ver Versão Mobile (v1)
+                    <div class="project-links">
+                        <h3>Navegação</h3>
+                        <a href="index.html#projects" class="btn btn-demo">
+                            <i class="fas fa-arrow-left"></i> Voltar aos Projetos
                         </a>
                     </div>
                 </div>
@@ -99,9 +104,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
-            <p>Desenvolvimento de Software Multiplataforma - Fatec Itaquera</p>
+            <p>&copy; 2026 Gustavo Costa Oliveira. Todos os direitos reservados.</p>
+            <p>Pós-graduando em Analytics e Business Intelligence (PUC Minas) | Fatec Itaquera</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

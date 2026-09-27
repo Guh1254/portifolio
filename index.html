@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Costa Oliveira - Desenvolvedor de Software Júnior</title>
+    <title>Gustavo Costa Oliveira | Analista de Dados &amp; BI</title>
     
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Portfólio de Gustavo Costa Oliveira. Analista de Dados &amp; BI com experiência corporativa em auditoria de custos em ERP e formação técnica em software. SQL, Python, Power BI e Cloud.">
+    <meta name="keywords" content="Gustavo Costa Oliveira, Analista de Dados, Business Intelligence, BI, SQL, Python, Power BI, DAX, Modelagem de Dados, ERP, FATEC, PUC Minas">
+    <meta name="author" content="Gustavo Costa Oliveira">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gustavo Costa Oliveira | Analista de Dados &amp; BI">
+    <meta property="og:description" content="Portfólio profissional de Análise de Dados e Business Intelligence: SQL, Python, Power BI e processos corporativos.">
+    <meta property="og:image" content="img/perfil.png">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">GCO</a>
+                <a href="#home">GCO<span>.</span></a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Início</a>
@@ -23,10 +32,10 @@
                 <a href="#experience" class="nav-link">Experiência</a>
                 <a href="#projects" class="nav-link">Projetos</a>
                 <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#certifications" class="nav-link">Certificações</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#education" class="nav-link">Formação</a>
+                <a href="#contact" class="nav-link nav-cta-btn"><i class="fas fa-paper-plane"></i> Contato</a>
             </div>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -34,367 +43,570 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-text">
+                <div class="hero-tagline">
+                    <i class="fas fa-chart-line"></i> Analista de Dados &amp; Business Intelligence
+                </div>
+                
                 <h1 class="hero-title">
                     Gustavo <span class="gradient-text">Costa Oliveira</span>
                 </h1>
-                <h2 class="hero-subtitle">
-                    Desenvolvedor de Software Júnior | Java, Kotlin & Cloud
-                </h2>
-                <p class="hero-description">
-                    Graduado em Desenvolvimento de Software Multiplataforma. Especialista em criar soluções escaláveis com arquiteturas modernas (Kotlin Multiplatform & Spring Boot).
+                
+                <p class="hero-subtitle">
+                    SQL • Python • Power BI • Modelagem Dimensional • Cloud
                 </p>
-                <div class="hero-socials">
-                    <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="social-icon" aria-label="Acesse meu perfil no LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                
+                <p class="hero-description">
+                    Graduado em software pela <strong>FATEC</strong> e pós-graduando em Analytics &amp; BI pela <strong>PUC Minas</strong>. Atuo na Pêssego Transportes com auditoria de custos em ERP corporativo, análise de cotações e processos operacionais, unindo visão prática de negócios com análise técnica de dados.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> Ver Projetos
                     </a>
-                    <a href="https://github.com/Guh1254" target="_blank" class="social-icon" aria-label="Acesse meu perfil no GitHub">
-                        <i class="fab fa-github"></i>
+                    <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Guh1254" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Conecte-se</a>
+
+                <div class="hero-highlights">
+                    <span class="highlight-chip"><i class="fas fa-graduation-cap"></i> FATEC + PUC Minas</span>
+                    <span class="highlight-chip"><i class="fas fa-language"></i> Inglês C1 Fluente (EF SET)</span>
+                    <span class="highlight-chip"><i class="fas fa-award"></i> Artigo no 8º EnGeTec</span>
+                    <span class="highlight-chip"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
                 </div>
             </div>
+
             <div class="hero-image-wrapper">
                 <div class="hero-image-ring">
-                    <img src="img/perfil.png" alt="Gustavo Costa Oliveira" class="profile-img">
+                    <img src="img/perfil.png" alt="Foto de Gustavo Costa Oliveira" class="profile-avatar">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Desenvolvedor Full-Stack focado em arquiteturas Multiplataforma e Cloud.</h3>
-                    <p>
-                        Graduado em <strong>Desenvolvimento de Software Multiplataforma</strong> na 
-                        <strong>Fatec Itaquera</strong> (Concluído em 12/2025). Minha jornada evoluiu para a construção de ecossistemas complexos, unindo interfaces nativas (Android/iOS) a back-ends robustos em Java e Spring Boot.
-                    </p>
-                    <p>
-                        Com experiência prática em projetos como o <strong>Projeto Paz (Kotlin Multiplatform)</strong> e atuação profissional na modernização de portais corporativos, busco oportunidades para aplicar conhecimentos em Nuvem (AWS/Azure) e desenvolvimento escalável.
-                    </p>
-                    <div class="about-info">
-                         <div class="info-item">
-                            <i class="fas fa-language"></i>
-                            <span>Português (Nativo), Inglês (C1 Advanced)</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>São Paulo, SP, Brasil</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>gustavocostaoliveira1254@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-links">
-                    <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="link-card">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Guh1254" target="_blank" class="link-card">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="experience-grid">
-                
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <div class="exp-icon"><i class="fas fa-code"></i></div>
-                        <div>
-                            <h3>Desenvolvedor Front-End (Estágio)</h3>
-                            <p class="exp-company">Welcome2Brazil Assessoria Ltda | Jul 2025 - Dez 2025</p>
-                        </div>
-                    </div>
-                    <div class="exp-content">
-                        <p>Responsável pelo desenvolvimento e entrega do novo portal institucional da empresa. Modernizei a comunicação digital implementando mapas interativos com <strong>Leaflet.js</strong> e otimizando a performance web com HTML5 e CSS3 semântico.</p>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <div class="exp-icon"><i class="fas fa-briefcase"></i></div>
-                        <div>
-                            <h3>Jovem Aprendiz Administrativo</h3>
-                            <p class="exp-company">Pêssego Transportes Ltda | Set 2024 - Atual</p>
-                        </div>
-                    </div>
-                    <div class="exp-content">
-                        <p>Atuação na digitalização de processos e gestão documental, desenvolvendo habilidades de organização, comunicação corporativa e resolução ágil de problemas em equipe.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
-            <div class="projects-grid">
-                
-                <a href="projeto-paz.html" class="project-card featured" data-semester="6">
-                    <div class="project-header">
-                        <div class="featured-badge">Arquitetura KMP</div>
-                        <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
-                        <h3>Projeto Paz 2.0 (Sistema KMP)</h3>
-                        <span class="semester-badge">6º Semestre</span>
-                    </div>
-                    <div class="project-content">
-                        <p><strong>Conclusão de Curso:</strong> Evolução arquitetural para Kotlin Multiplatform. Código compartilhado entre Android, iOS, Web e Desktop com Backend Spring Boot e IoT.</p>
-                        
-                        <div class="project-actions">
-                            <div class="btn btn-sm btn-primary">Ver Evolução</div>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin KMP</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">AWS S3</span>
-                            <span class="tech-tag">IoT (ESP32)</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projeto-paz-v1.html" class="project-card" data-semester="5">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <h3>Projeto Paz v1 (Mobile)</h3>
-                        <span class="semester-badge">5º Semestre</span>
-                    </div>
-                    <div class="project-content">
-                        <p><strong>MVP Mobile:</strong> Primeira versão do sistema focada em dispositivos móveis, desenvolvida para validar a ideia de gestão de vendas em eventos.</p>
-                        
-                        <div class="project-actions">
-                            <div class="btn btn-sm btn-primary">Ver Projeto</div>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">API Rest</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projeto-maratonaplus.html" class="project-card" data-semester="4">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-running"></i></div>
-                        <h3>Maratona+</h3>
-                        <span class="semester-badge">4º Semestre</span>
-                    </div>
-                    <div class="project-content">
-                        <p><strong>App Android Nativo:</strong> Aplicativo para gestão de corridas, com cronômetro em tempo real e histórico de atletas.</p>
-                        
-                        <div class="project-actions">
-                            <div class="btn btn-sm btn-primary">Ver Projeto</div>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Java (Android)</span>
-                            <span class="tech-tag">XML</span>
-                            <span class="tech-tag">Spring Boot</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projeto-springtoys.html" class="project-card" data-semester="3">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-                        <h3>Spring Toys</h3>
-                        <span class="semester-badge">3º Semestre</span>
-                    </div>
-                    <div class="project-content">
-                        <p><strong>E-commerce Full-Stack:</strong> Loja virtual completa com back-end em Java (Spring Boot) e painel administrativo para gestão de estoque e pedidos.</p>
-                        
-                        <div class="project-actions">
-                            <div class="btn btn-sm btn-primary">Ver Projeto</div>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projeto-connectongs.html" class="project-card" data-semester="2">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-hands-helping"></i></div>
-                        <h3>ConnectONGs</h3>
-                        <span class="semester-badge">2º Semestre</span>
-                    </div>
-                    <div class="project-content">
-                        <p><strong>Plataforma Web:</strong> Sistema para conectar ONGs a voluntários, com foco em modelagem de banco de dados complexa.</p>
-                        
-                        <div class="project-actions">
-                            <div class="btn btn-sm btn-primary">Ver Projeto</div>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projeto-pokedex.html" class="project-card" data-semester="1">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-search"></i></div>
-                        <h3>Pokédex Simples</h3>
-                        <span class="semester-badge">1º Semestre</span>
-                    </div>
-                        <div class="project-content">
-                            <p>Consumo de API Rest e manipulação de DOM com JavaScript puro para busca de dados em tempo real.</p>
-                            
-                            <div class="project-actions">
-                                <div class="btn btn-sm btn-primary">Ver Projeto</div>
-                            </div>
-
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML5</span> <span class="tech-tag">JavaScript</span> <span class="tech-tag">API Rest</span>
-                            </div>
-                        </div>
-                    </a>
+            <div class="section-header">
+                <span class="section-tag">Apresentação</span>
+                <h2 class="section-title">Sobre Mim</h2>
             </div>
             
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="6">KMP (Final)</button>
-                <button class="filter-btn" data-filter="5">React Native</button>
-                <button class="filter-btn" data-filter="3">Java/Spring</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Unindo visão analítica de processos, rotinas corporativas e engenharia de dados.</h3>
+                    <p>
+                        Com formação em software pela <strong>FATEC Itaquera</strong> e especialização em Analytics e BI pela <strong>PUC Minas</strong>, atuo na conexão entre análise de dados, eficiência operacional e processos corporativos.
+                    </p>
+                    <p>
+                        No dia a dia profissional na Pêssego Transportes, atuo diretamente com compras corporativas e auditoria de custos em sistema ERP: conciliação analítica de notas fiscais, conferência de ordens de serviço, mapas comparativos de fornecedores e busca contínua por saving.
+                    </p>
+                    <p>
+                        Uno essa vivência prática de processos com competências técnicas em <strong>SQL</strong> e <strong>Python (Pandas)</strong> para extração e tratamento, modelagem dimensional e construção de dashboards no <strong>Power BI</strong>. Também possuo inglês fluente certificado (<strong>C1 Advanced pelo EF SET</strong>) e certificações em Cloud e Dados pela Google Cloud, AWS e Microsoft Azure.
+                    </p>
+                </div>
+
+                <div class="about-cards">
+                    <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="about-card" style="text-decoration: none;">
+                        <div class="about-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="about-card-content">
+                            <h4>LinkedIn</h4>
+                            <p>gustavo-costa-oliveira-4473b620a</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Guh1254" target="_blank" class="about-card" style="text-decoration: none;">
+                        <div class="about-card-icon"><i class="fab fa-github"></i></div>
+                        <div class="about-card-content">
+                            <h4>GitHub</h4>
+                            <p>github.com/Guh1254 (19 repositórios)</p>
+                        </div>
+                    </a>
+
+                    <a href="https://cert.efset.org/en/5buHbD" target="_blank" class="about-card" style="text-decoration: none;">
+                        <div class="about-card-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="about-card-content">
+                            <h4>Inglês C1 Advanced (EF SET)</h4>
+                            <p>Score 68/100 • Fluência Profissional</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:gustavocostaoliveira1254@gmail.com" class="about-card" style="text-decoration: none;">
+                        <div class="about-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="about-card-content">
+                            <h4>E-mail</h4>
+                            <p>gustavocostaoliveira1254@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <!-- Experience Section -->
+    <section id="experience">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-content">
-                <div class="skills-category">
-                    <h3><i class="fas fa-code"></i> Linguagens & Frameworks</h3>
-                    <div class="skills-tags">
-                        <span class="tag">Kotlin</span> <span class="tag">Java</span> <span class="tag">Spring Boot</span> <span class="tag">Compose Multiplatform</span> <span class="tag">React Native</span> <span class="tag">JavaScript</span> <span class="tag">HTML5/CSS3</span>
+            <div class="section-header">
+                <span class="section-tag">Carreira</span>
+                <h2 class="section-title">Experiência Profissional</h2>
+            </div>
+
+            <div class="experience-list">
+                
+                <!-- Pêssego Transportes Ltda -->
+                <div class="experience-block">
+                    <div class="company-header">
+                        <div class="company-title-wrap">
+                            <div class="company-icon"><i class="fas fa-bus"></i></div>
+                            <div>
+                                <h3 class="company-name">Pêssego Transportes Ltda</h3>
+                                <p class="company-segment">Transporte Coletivo Urbano de Passageiros | Gestão de Suprimentos &amp; ERP</p>
+                            </div>
+                        </div>
+                        <span class="progression-badge">
+                            <i class="fas fa-arrow-trend-up"></i> Progressão: Aprendiz ➔ Júnior ➔ Pleno
+                        </span>
+                    </div>
+
+                    <div class="roles-timeline">
+                        <!-- Cargo 1 -->
+                        <div class="role-step">
+                            <div class="role-header">
+                                <span class="role-title">Auxiliar de Compras Pleno</span>
+                                <span class="role-current-tag">Cargo Atual</span>
+                                <span class="role-period">• Setembro de 2026 – Atual</span>
+                            </div>
+                            <ul class="role-bullets">
+                                <li>Auditoria sistemática de custos: conciliação e cruzamento analítico de Notas Fiscais, orçamentos e Ordens de Serviço em sistema ERP corporativo.</li>
+                                <li>Elaboração de mapas comparativos de cotações com múltiplos fornecedores, analisando variáveis de custo unitário, condições de pagamento e lead time para geração de saving mensurável.</li>
+                                <li>Monitoramento e qualificação contínua da base de fornecedores com base em indicadores de conformidade e SLA.</li>
+                                <li>Aplicação e conformidade de fluxos operacionais segundo diretrizes de normas ISO (9001, 14001, 39001 e 37001).</li>
+                            </ul>
+                            <div class="role-tags">
+                                <span class="role-tag">ERP Corporativo</span>
+                                <span class="role-tag">Auditoria de Custos</span>
+                                <span class="role-tag">Mapas de Cotação</span>
+                                <span class="role-tag">Saving Mensurável</span>
+                                <span class="role-tag">SLA Fornecedores</span>
+                                <span class="role-tag">Normas ISO</span>
+                            </div>
+                        </div>
+
+                        <!-- Cargo 2 -->
+                        <div class="role-step">
+                            <div class="role-header">
+                                <span class="role-title">Auxiliar de Compras Júnior</span>
+                                <span class="role-period">• Março de 2026 – Agosto de 2026</span>
+                            </div>
+                            <ul class="role-bullets">
+                                <li>Rastreamento e auditoria de histórico de reparos e garantias, prevenindo custos duplicados através da análise de recorrência.</li>
+                                <li>Estruturação de bases analíticas no Excel para tomada de decisão e suporte aos diagnósticos de fluxo operacional (AS-IS / TO-BE).</li>
+                            </ul>
+                            <div class="role-tags">
+                                <span class="role-tag">Excel Avançado</span>
+                                <span class="role-tag">Controle de Garantias</span>
+                                <span class="role-tag">Diagnóstico AS-IS / TO-BE</span>
+                            </div>
+                        </div>
+
+                        <!-- Cargo 3 -->
+                        <div class="role-step">
+                            <div class="role-header">
+                                <span class="role-title">Aprendiz Administrativo</span>
+                                <span class="role-period">• Setembro de 2024 – Fevereiro de 2026</span>
+                            </div>
+                            <ul class="role-bullets">
+                                <li>Digitalização, catalogação lógica e controle documental de frotas e suprimentos corporativos.</li>
+                            </ul>
+                            <div class="role-tags">
+                                <span class="role-tag">Digitalização</span>
+                                <span class="role-tag">Gestão Documental</span>
+                                <span class="role-tag">Controle de Frotas</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skills-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-                    <div class="skills-tags">
-                        <span class="tag">AWS (S3/EC2)</span> <span class="tag">Google Cloud</span> <span class="tag">Microsoft Azure</span> <span class="tag">Docker</span> <span class="tag">Git/GitHub</span>
+                <!-- Welcome to Brasil Assessoria Migratória -->
+                <div class="experience-block">
+                    <div class="company-header">
+                        <div class="company-title-wrap">
+                            <div class="company-icon"><i class="fas fa-globe-americas"></i></div>
+                            <div>
+                                <h3 class="company-name">Welcome to Brasil Assessoria Migratória</h3>
+                                <p class="company-segment">Assessoria e Serviços Internacionais</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roles-timeline">
+                        <div class="role-step">
+                            <div class="role-header">
+                                <span class="role-title">Estagiário em Desenvolvimento Front-End</span>
+                                <span class="role-period">• Julho de 2025 – Dezembro de 2025</span>
+                            </div>
+                            <ul class="role-bullets">
+                                <li>Desenvolvimento e publicação do portal institucional com foco em usabilidade, estruturação de formulários dinâmicos e otimização do fluxo de triagem de dados de clientes internacionais.</li>
+                            </ul>
+                            <div class="role-tags">
+                                <span class="role-tag">Desenvolvimento Web</span>
+                                <span class="role-tag">Formulários Dinâmicos</span>
+                                <span class="role-tag">Triagem de Dados</span>
+                                <span class="role-tag">UX/UI</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Apenas os 2 Projetos Reais) -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfólio Prático</span>
+                <h2 class="section-title">Projetos em Destaque</h2>
+            </div>
+
+            <div class="projects-grid">
                 
-                <div class="skills-category">
-                    <h3><i class="fas fa-database"></i> Dados & Outros</h3>
-                    <div class="skills-tags">
-                        <span class="tag">MySQL</span> <span class="tag">PostgreSQL</span> <span class="tag">IoT (ESP32)</span> <span class="tag">API Rest</span> <span class="tag">JWT Security</span> <span class="tag">Scrum</span>
+                <!-- Projeto 1: Projeto PAZ -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag"><i class="fas fa-award"></i> Publicação no 8º EnGeTec</span>
+                        <div class="project-icon-box"><i class="fas fa-satellite-dish"></i></div>
+                        <h3>Projeto PAZ (IoT, Cloud &amp; Telemetria)</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>
+                            Solução completa multiplataforma com arquitetura unificada para Android, iOS, Web e Desktop, integrada a pipeline de telemetria contínua via hardware IoT (ESP32) e nuvem com Spring Boot 3 e AWS S3. Trabalho publicado no 8º EnGeTec.
+                        </p>
+                        
+                        <!-- Mini Arquitetura -->
+                        <div class="arch-mini-grid">
+                            <div class="arch-item">
+                                <strong>Frontend</strong>
+                                <span>Kotlin KMP / Compose</span>
+                            </div>
+                            <div class="arch-item">
+                                <strong>Backend</strong>
+                                <span>Spring Boot 3 / JWT</span>
+                            </div>
+                            <div class="arch-item">
+                                <strong>Infra &amp; Dados</strong>
+                                <span>MySQL / AWS S3 / Docker</span>
+                            </div>
+                            <div class="arch-item">
+                                <strong>IoT / Telemetria</strong>
+                                <span>ESP32 + Sensores Wi-Fi</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="projeto-paz.html" class="btn btn-sm btn-primary">
+                                <i class="fas fa-file-alt"></i> Ver Detalhes do Case
+                            </a>
+                            <a href="https://github.com/SpringDevsFatec/ProjetoPaz_KotlinMultiplatforma" target="_blank" class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+
+                        <div class="project-tech-pills">
+                            <span class="tech-pill">Kotlin KMP</span>
+                            <span class="tech-pill">Spring Boot 3</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">AWS S3</span>
+                            <span class="tech-pill">ESP32 (IoT)</span>
+                            <span class="tech-pill">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2: Spring Toys -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag"><i class="fas fa-code-branch"></i> Full-Stack &amp; APIs RESTful</span>
+                        <div class="project-icon-box"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>Spring Toys (E-commerce &amp; API Transacional)</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <!-- Screenshot preview do projeto -->
+                        <div class="project-thumbnail">
+                            <img src="img/springtoys-1.jpg" alt="Preview da interface do Spring Toys">
+                        </div>
+
+                        <p>
+                            Simulação de ambiente e-commerce corporativo completo, com controle transacional de estoque, autenticação e consumo de API RESTful em arquitetura MVC construída com Java 17, Spring Boot e persistência relacional no MySQL.
+                        </p>
+                        
+                        <div class="project-actions">
+                            <a href="projeto-springtoys.html" class="btn btn-sm btn-primary">
+                                <i class="fas fa-file-alt"></i> Ver Detalhes do Projeto
+                            </a>
+                            <a href="https://github.com/Guh1254/Spring-Toys" target="_blank" class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+
+                        <div class="project-tech-pills">
+                            <span class="tech-pill">Java 17</span>
+                            <span class="tech-pill">Spring Boot</span>
+                            <span class="tech-pill">Spring Data JPA</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stack &amp; Ferramentas</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+            </div>
+
+            <div class="skills-grid">
+                
+                <!-- Categoria 1: Dados & Business Intelligence -->
+                <div class="skill-category-card highlight">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-pie"></i> Dados &amp; Business Intelligence
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <strong>SQL</strong>
+                            <span>PostgreSQL, MySQL, queries avançadas, joins, subqueries, agregações</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Python</strong>
+                            <span>Pandas, NumPy, manipulação, limpeza e automação de bases analíticas</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Power BI &amp; DAX</strong>
+                            <span>Modelagem dimensional, Star Schema, dashboards executivos</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Excel Avançado</strong>
+                            <span>Tabelas dinâmicas, fórmulas de busca, modelagem financeira</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Estatística &amp; Metodologias Ágeis</strong>
+                            <span>Scrum, Kanban, análise descritiva e diagnóstica para negócios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 2: Cloud Computing & Infraestrutura -->
+                <div class="skill-category-card">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i> Cloud &amp; Infraestrutura
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <strong>Google Cloud Platform</strong>
+                            <span>BigQuery, Data Analytics Foundations</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>AWS</strong>
+                            <span>S3 para Data Lake, EC2, Cloud Foundations</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Microsoft Azure</strong>
+                            <span>Conceitos fundamentais de Cloud &amp; Arquitetura</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>DevOps &amp; Versionamento</strong>
+                            <span>Docker, Git &amp; GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 3: Engenharia de Software -->
+                <div class="skill-category-card">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i> Engenharia de Software &amp; IoT
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <strong>Java &amp; Spring Boot</strong>
+                            <span>Criação de APIs RESTful, persistência relacional com JPA</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>Kotlin &amp; KMP</strong>
+                            <span>Arquitetura de dados compartilhada multiplataforma</span>
+                        </div>
+                        <div class="skill-row">
+                            <strong>IoT &amp; Telemetria</strong>
+                            <span>ESP32, ingestão de dados de sensores via Wi-Fi</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Qualificações</span>
+                <h2 class="section-title">Formação &amp; Certificações</h2>
+            </div>
+
+            <div class="edu-cert-container">
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon-badge"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>Pós-graduação Lato Sensu em Analytics e Business Intelligence</h4>
+                        <p class="institution">PUC Minas (Pontifícia Universidade Católica de Minas Gerais)</p>
+                        <p class="period"><i class="far fa-calendar-alt"></i> 2026 – 2028 (Em andamento)</p>
+                        <p>Especialização focada em inteligência de negócios, engenharia analítica, modelagem preditiva, governança de dados e tomada de decisão estratégica.</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="edu-icon-badge"><i class="fas fa-university"></i></div>
+                        <h4>Tecnólogo em Desenvolvimento de Software Multiplataforma</h4>
+                        <p class="institution">FATEC Itaquera (Faculdade de Tecnologia de São Paulo)</p>
+                        <p class="period"><i class="far fa-calendar-alt"></i> Concluído em Dezembro de 2025</p>
+                        <p>Formação superior com sólida base em engenharia de software, modelagem de bancos de dados relacionais e não-relacionais, arquiteturas em nuvem e desenvolvimento de software.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="certifications-section-title">
+                        <i class="fas fa-certificate"></i> Certificações em Evidência
+                    </h3>
+
+                    <div class="certifications-grid">
+                        
+                        <div class="cert-card">
+                            <div>
+                                <h5>Google Cloud - Data Analytics</h5>
+                                <p>Google Cloud | Nov de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/1377bcb8-9dd8-48fe-8619-fa979bc4e71e/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>Google Cloud - Computing Foundations</h5>
+                                <p>Google Cloud | Nov de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/b5da52cd-f62a-4295-b296-d29e81c61159/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>AWS Academy - Cloud Architecting</h5>
+                                <p>Amazon Web Services | Set de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/5fadd648-cd31-49fa-8e2c-48e099384070/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>AWS Academy - Cloud &amp; GenAI Foundations</h5>
+                                <p>Amazon Web Services | Jun de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/2d928095-0cf0-461e-a0f6-737dd6550e39/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>Microsoft Azure - Cloud Concepts &amp; Arch</h5>
+                                <p>Microsoft | 2025</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="cert-link-btn">
+                                Ver Perfil <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>IBM - Artificial Intelligence Fundamentals</h5>
+                                <p>IBM | Mai de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/777a3c97-127a-426f-8862-ea1d9a075ebe/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>IBM - Cybersecurity Fundamentals</h5>
+                                <p>IBM | Mai de 2025</p>
+                            </div>
+                            <a href="https://www.credly.com/badges/918bda9a-1bf0-4685-ae06-0dc58dc85320/linked_in_profile" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div>
+                                <h5>EF SET - English Certificate (C1 Advanced)</h5>
+                                <p>EF SET | Set de 2025 (Score 68/100)</p>
+                            </div>
+                            <a href="https://cert.efset.org/en/5buHbD" target="_blank" class="cert-link-btn">
+                                Ver Credencial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="certifications">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">Certificações e Cursos</h2>
-            <div class="certifications-grid">
-                
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-google"></i></div>
-                    <h3>Google Cloud Computing Foundations</h3>
-                    <p class="cert-issuer">Google Cloud | Nov de 2025</p>
-                    <a href="https://www.credly.com/badges/b5da52cd-f62a-4295-b296-d29e81c61159/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-google"></i></div>
-                    <h3>Google Cloud Data Analytics</h3>
-                    <p class="cert-issuer">Google Cloud | Nov de 2025</p>
-                    <a href="https://www.credly.com/badges/1377bcb8-9dd8-48fe-8619-fa979bc4e71e/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3>AWS Academy - Cloud Architecting</h3>
-                    <p class="cert-issuer">Amazon Web Services | Set de 2025</p>
-                    <a href="https://www.credly.com/badges/5fadd648-cd31-49fa-8e2c-48e099384070/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3>AWS Academy Graduate - Generative AI Foundationss</h3>
-                    <p class="cert-issuer">Amazon Web Services | Jun de 2025</p>
-                    <a href="https://www.credly.com/badges/2d928095-0cf0-461e-a0f6-737dd6550e39/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Artificial Intelligence Fundamentals</h3>
-                    <p class="cert-issuer">IBM | Mai de 2025</p>
-                    <a href="https://www.credly.com/badges/777a3c97-127a-426f-8862-ea1d9a075ebe/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Cybersecurity Fundamentals</h3>
-                    <p class="cert-issuer">IBM | Mai de 2025</p>
-                    <a href="https://www.credly.com/badges/918bda9a-1bf0-4685-ae06-0dc58dc85320/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Endpoint Security</h3>
-                    <p class="cert-issuer">Cisco | Set de 2024</p>
-                    <a href="https://www.credly.com/badges/d1109054-75a0-44ce-a35c-db4cb3d9ab72/linked_in_profile" class="btn btn-sm btn-demo">Ver Credencial</a>
-                </div>
-
-                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-language"></i></div>
-                    <h3>EF SET English Certificate (C1 Advanced)</h3>
-                    <p class="cert-issuer">EF SET | Set de 2025</p>
-                    <a href="https://cert.efset.org/en/5buHbD" class="btn btn-sm btn-demo">Ver Credencial</a>
+            <div class="contact-container">
+                <h3>Vamos conversar?</h3>
+                <p>
+                    Estou aberto a oportunidades como <strong>Analista de Dados Júnior</strong>, <strong>Analista de BI</strong> ou <strong>Programas de Trainee corporativos</strong>.
+                </p>
+                <div class="contact-buttons">
+                    <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin-in"></i> Conectar no LinkedIn
+                    </a>
+                    <a href="mailto:gustavocostaoliveira1254@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Enviar E-mail
+                    </a>
+                    <a href="https://github.com/Guh1254" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Vamos Conversar?</h2>
-            <p>
-                Estou aberto a oportunidades como <strong>Trainee</strong> ou <strong>Desenvolvedor Júnior</strong>.
-            </p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/gustavo-costa-oliveira-4473b620a/" target="_blank" class="btn btn-primary">Acessar LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
-            <p>Tecnólogo em Desenvolvimento de Software Multiplataforma - Fatec Itaquera</p>
+            <p>&copy; 2026 Gustavo Costa Oliveira. Todos os direitos reservados.</p>
         </div>
     </footer>
 

@@ -1,72 +1,150 @@
-/* Estilos para a Página de Projeto */
+/* ==========================================================================
+   Gustavo Costa Oliveira - Projeto Details Page Stylesheet
+   ========================================================================== */
 
 /* Hero Section do Projeto */
 .project-hero {
-    background: var(--background-light);
-    padding: 120px 0 60px;
+    background: var(--bg-surface);
+    padding: 130px 0 60px;
     text-align: center;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.project-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 100%;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.12), transparent 70%);
+    pointer-events: none;
+}
+
+.project-tag-highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 211, 238, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    padding: 6px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
 .project-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
 }
 
 .project-hero p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 /* Detalhes do Projeto */
 .project-details {
-    padding: 80px 0;
+    padding: 70px 0 90px;
 }
 
 .project-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 60px;
+    gap: 50px;
 }
 
 .project-info h2 {
-    font-size: 1.8rem;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--primary-color);
+    font-size: 1.45rem;
+    color: var(--white);
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
 }
 
-.project-info p, .project-info ul {
+.project-info h2:first-of-type {
+    margin-top: 0;
+}
+
+.project-info p {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .project-info ul {
-    list-style-position: inside;
-    padding-left: 10px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
 }
 
 .project-info ul li {
-    margin-bottom: 10px;
+    color: var(--text-secondary);
+    font-size: 1.02rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.project-info ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.project-info strong {
+    color: var(--text-primary);
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.tech-tag {
+    background: rgba(34, 211, 238, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(34, 211, 238, 0.25);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .project-sidebar > div {
-    background: var(--background-light);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    margin-bottom: 30px;
-    border: 1px solid #334155;
+    background: var(--bg-surface);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-card);
 }
 
 .project-sidebar h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: var(--text-primary);
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
 }
 
 .project-links a {
@@ -76,59 +154,55 @@
     gap: 10px;
     text-align: center;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
-/* Ajustes para as imagens das screenshots na sidebar */
+.btn-demo {
+    background: var(--bg-subtle);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-demo:hover {
+    background: var(--bg-surface-hover);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
 .project-screenshots img {
-    max-width: 100%; /* Garante que a imagem não transborde */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #334155;
-    display: block; /* Garante que a imagem se comporte como um bloco para margin-bottom */
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin-bottom: 14px;
+    border: 1px solid var(--border-color);
+    display: block;
+    transition: var(--transition);
+}
+
+.project-screenshots a img:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: scale(1.02);
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .project-layout {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
-}
-
-/* Adiciona um cursor de zoom nas imagens da galeria */
-.project-screenshots a img:hover {
-    cursor: zoom-in;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.project-info .project-tech {
-    margin-bottom: 40px;
-}
-
-/* Estilos para o vídeo embutido */
-.project-video {
-    background: var(--background-light);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    margin-bottom: 30px;
-    border: 1px solid #334155;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 10px; /* Bordas arredondadas para o vídeo */
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    
+    .project-hero h1 {
+        font-size: 2.2rem;
+    }
 }

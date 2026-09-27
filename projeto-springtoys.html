@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Spring Toys - Gustavo Costa Oliveira</title>
+    <title>Spring Toys (E-commerce &amp; API Transacional) - Gustavo Costa Oliveira</title>
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -19,14 +19,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html#home">GCO</a>
+                <a href="index.html#home">GCO<span>.</span></a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html#home" class="nav-link">Início</a>
-                <a href="index.html#about" class="nav-link">Sobre</a>
                 <a href="index.html#projects" class="nav-link">Projetos</a>
                 <a href="index.html#skills" class="nav-link">Habilidades</a>
-                <a href="index.html#certifications" class="nav-link">Certificações</a>
+                <a href="index.html#experience" class="nav-link">Experiência</a>
                 <a href="index.html#contact" class="nav-link">Contato</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -40,8 +39,9 @@
     <main>
         <section class="project-hero">
             <div class="container">
+                <span class="project-tag-highlight"><i class="fas fa-code-branch"></i> Full-Stack &amp; APIs RESTful</span>
                 <h1>Spring Toys</h1>
-                <p>Projeto do 3º Semestre</p>
+                <p>Simulação corporativa de e-commerce com controle transacional de estoque e arquitetura MVC</p>
             </div>
         </section>
 
@@ -50,26 +50,27 @@
                 <div class="project-info">
                     <h2>Descrição do Projeto</h2>
                     <p>
-                        O Spring Toys é um projeto full-stack que simula um e-commerce completo para uma loja de brinquedos. Desenvolvido em equipe, o sistema conta com um back-end robusto criado em <strong>Java com Spring Boot</strong>, que expõe uma API REST para gerenciar produtos, categorias e usuários. O front-end, construído com <strong>HTML, CSS e JavaScript puro</strong>, consome essa API para criar uma experiência dinâmica tanto para o cliente quanto para o administrador.
+                        O <strong>Spring Toys</strong> é uma solução full-stack que simula um ambiente e-commerce corporativo completo para uma rede varejista de brinquedos. O sistema conta com um back-end robusto criado em <strong>Java 17 com Spring Boot</strong>, implementando arquitetura MVC e expondo APIs RESTful para controle transacional de catálogo, estoque, pedidos e usuários com persistência relacional no <strong>MySQL</strong> via Spring Data JPA.
                     </p>
 
                     <h2>Tecnologias Utilizadas</h2>
                     <div class="project-tech">
-                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Java 17</span>
                         <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Spring Data JPA</span>
                         <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript ES6+</span>
+                        <span class="tech-tag">HTML5 / CSS3</span>
                     </div>
 
-                    <h2>Minha Participação no Projeto</h2>
+                    <h2>Atuação Técnica e Integração de Dados</h2>
                     <p>
-                        Neste projeto, minha principal atuação foi no <strong>desenvolvimento front-end</strong> e na <strong>integração com a API</strong>. Fui responsável por traduzir as necessidades do sistema em interfaces funcionais e interativas. Minhas tarefas incluíram:
+                        Neste projeto, atuei diretamente na estruturação das camadas de integração entre interface e banco de dados relacional:
                     </p>
                     <ul>
-                        <li><strong>Consumo da API REST:</strong> Utilizei JavaScript e a função `fetch` para realizar chamadas (GET, POST, PUT, DELETE) aos endpoints do back-end, buscando e enviando dados de produtos e categorias.</li>
-                        <li><strong>Renderização Dinâmica:</strong> Criei as funções para popular dinamicamente o catálogo de produtos, os detalhes de cada brinquedo e as listas no painel administrativo com os dados vindos da API.</li>
-                        <li><strong>Interface Administrativa:</strong> Desenvolvi as telas do painel de administração, incluindo os formulários para criar, editar e excluir brinquedos e categorias, garantindo que todas as interações fossem refletidas no banco de dados através da API.</li>
+                        <li><strong>Consumo e Integração de APIs REST:</strong> Implementação de fluxos assíncronos em JavaScript para manipulação dos endpoints do back-end, realizando operações completas de CRUD (produtos, categorias e controle de pedidos).</li>
+                        <li><strong>Controle de Estoque e Consistência Transacional:</strong> Validação de regras de negócio para evitar divergências e garantir que movimentações de compra reflitam atomicamente na base MySQL.</li>
+                        <li><strong>Interface Administrativa:</strong> Desenvolvimento dos painéis gerenciais e tabelas operacionais para consulta dinâmica de estoque e gerenciamento de catálogo.</li>
                     </ul>
                 </div>
 
@@ -90,6 +91,13 @@
                             <img src="img/springtoys-2.jpg" alt="Screenshot do painel de administração do Spring Toys">
                         </a>
                     </div>
+
+                    <div class="project-links">
+                        <h3>Navegação</h3>
+                        <a href="index.html#projects" class="btn btn-demo">
+                            <i class="fas fa-arrow-left"></i> Voltar aos Projetos
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,16 +105,17 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Gustavo Costa Oliveira.</p>
-            <p>RA: 2571392312006 | Fatec Itaquera - Desenvolvimento de Software Multiplataforma</p>
+            <p>&copy; 2026 Gustavo Costa Oliveira. Todos os direitos reservados.</p>
+            <p>Pós-graduando em Analytics e Business Intelligence (PUC Minas) | Fatec Itaquera</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
     <script>
         // Inicializa a galeria de imagens
-        var lightbox = new SimpleLightbox('.project-screenshots a');
+        if (typeof SimpleLightbox !== 'undefined') {
+            var lightbox = new SimpleLightbox('.project-screenshots a');
+        }
     </script>
-
 </body>
 </html>
