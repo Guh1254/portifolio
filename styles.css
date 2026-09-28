@@ -203,7 +203,13 @@ body {
     padding: 0 24px;
 }
 
-.hero-badge {
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge,
+.hero-tagline {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -234,7 +240,8 @@ body {
     background-clip: text;
 }
 
-.hero-headline {
+.hero-headline,
+.hero-subtitle {
     font-size: 1.22rem;
     color: var(--primary);
     font-weight: 600;
@@ -245,7 +252,8 @@ body {
     gap: 8px;
 }
 
-.hero-headline span.divider {
+.hero-headline span.divider,
+.hero-subtitle span.divider {
     color: var(--border-color);
 }
 
@@ -270,7 +278,8 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-chips {
+.hero-chips,
+.hero-highlights {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -278,7 +287,8 @@ body {
     border-top: 1px solid var(--border-color);
 }
 
-.chip {
+.chip,
+.highlight-chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -292,13 +302,15 @@ body {
     transition: var(--transition);
 }
 
-.chip:hover {
+.chip:hover,
+.highlight-chip:hover {
     border-color: var(--primary);
     color: var(--white);
     transform: translateY(-2px);
 }
 
-.chip i {
+.chip i,
+.highlight-chip i {
     color: var(--primary);
 }
 
@@ -354,24 +366,37 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .hero-image-ring {
     width: 290px;
     height: 290px;
+    max-width: 100%;
     border-radius: 50%;
     padding: 6px;
     position: relative;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     box-shadow: 0 0 35px rgba(34, 211, 238, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.hero-image-ring .profile-avatar {
+.hero-image-ring img,
+.hero-image-ring .profile-avatar,
+.hero-image-ring .profile-img,
+.profile-avatar,
+.profile-img {
     width: 100%;
     height: 100%;
+    max-width: 278px;
+    max-height: 278px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--bg-dark);
+    display: block;
 }
 
 /* ==========================================================================
@@ -391,7 +416,8 @@ section:nth-of-type(even) {
     margin-bottom: 50px;
 }
 
-.section-kicker {
+.section-kicker,
+.section-tag {
     display: inline-block;
     color: var(--primary);
     font-size: 0.82rem;
